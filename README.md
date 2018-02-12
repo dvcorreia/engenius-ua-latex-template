@@ -5,20 +5,15 @@
 </p>
 
 <p align="center">
-
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]()
-
+<a href="#"><img src="https://img.shields.io/travis/rust-lang/rust.svg" alt="Build Status"></a>
+<a href="#"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Licence"></a>
 </p>
 
-<p align="center" style="font-size:150%;>
-
-[Download Template Here](#)
-
+<p align="center">
+<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template Here</a>
 </p>
 
 A custom Latex Document Class used exclusively by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
-
 This template was created thinking about non LaTeX users, providing easy  writing for people without any knowledge about TeX or LaTeX.
 
 ## Preview
