@@ -10,7 +10,9 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template Here</a>
+<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
+ ||
+<a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
 </p>
 
 A custom Latex Document Class used exclusively by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
