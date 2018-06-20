@@ -5,11 +5,6 @@
 </p>
 
 <p align="center">
-<a href="#"><img src="https://img.shields.io/travis/rust-lang/rust.svg" alt="Build Status"></a>
-<a href="#"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Licence"></a>
-</p>
-
-<p align="center">
 <a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
