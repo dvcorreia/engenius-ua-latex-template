@@ -1,5 +1,3 @@
-# Engenius Latex Template
-
 <p align="center"><a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./documentation-assets/engeniusLogo.png" alt="engenius-logo"></a>
 <a href="https://www.latex-project.org/" target="_blank"><img height="60" src="./documentation-assets/latexlogo.png" alt="latex-logo"></a>
 </p>
