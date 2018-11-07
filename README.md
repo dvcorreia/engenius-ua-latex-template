@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-<b>one-column version:</b>
+<b>one-column v0.1.0:</b>
 <a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
 </p>
 
 <p align="center">
-<b>two-column version:</b>
+<b>two-column v0.1.0:</b>
 <a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
