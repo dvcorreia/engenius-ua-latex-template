@@ -1,6 +1,6 @@
 % Latex Document Class used exclusively by Engenius UA 
 % (c) 2018, Diogo Correia and João Santos, MIT Licensed
-% Original Repository: github.com/...
+% Original Repository: https://github.com/dvcorreia/engenius-ua-latex-template
 %
 
 % Define Document preset and configurations ---------------------
@@ -38,6 +38,7 @@
 \RequirePackage{multicol}
 \RequirePackage{ragged2e}
 \RequirePackage{datetime} \yyyymmdddate
+\RequirePackage[nottoc]{tocbibind}
 
 % Page Layout Definition -----------------------------------------
 \titleformat{\section}{\Large\bfseries}{\thesection}{0.75em}{}%[\titlerule]
@@ -54,7 +55,7 @@
 \def\dep@cpower{\def\dep@red{35}\def\dep@green{209}\def\dep@blue{96}} % green
 \def\dep@svd{\def\dep@red{184}\def\dep@green{107}\def\dep@blue{255}} % purple
 \def\dep@chassis{\def\dep@red{255}\def\dep@green{221}\def\dep@blue{87}} % yellow
-\def\dep@default{\def\dep@red{51}\def\dep@green{51}\def\dep@blue{255}} % yellow
+\def\dep@default{\def\dep@red{51}\def\dep@green{51}\def\dep@blue{255}} % blue
 
 % Declaration Options ---------------------------------------------
 \DeclareOption{ec}{\dep@ec
@@ -111,7 +112,7 @@
 
 \ProcessOptions
 
-% Departments functions
+% Departments definitions
 \def\depofec{Electronics/Communications}
 \def\depofeccolor{\dep@ec\textcolor[RGB]{\dep@red,\dep@green,\dep@blue}{\vrule width 14mm height 1.000mm depth 0mm}}
 
@@ -141,6 +142,23 @@
 
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}
 
+\bibliographystyle{unsrt}
+
+% Revisions --------------------------------------
+\newcommand{\revisions}{\stepcounter{section}\section*{Revisions}}
+\newcommand{\revisionof}[5]{\large\textbf{#1},\\\normalsize Dep. #2,\\#3,\\ \small version #4, #5\par}
+
+% Code snippets ----------------------------------------------------
+
+\RequirePackage{minted}
+\RequirePackage[skins,listings]{tcolorbox}
+
+\newtcolorbox{codebox}[1]{
+colback=white,colframe=black,fonttitle=\sffamily\bfseries\normalsize,
+title=#1}
+
+\setminted{fontsize=\footnotesize,breaklines,breakanywhere,fontfamily=helvetica}
+
 % Page Header and Footer -----------------------------------------
 \RequirePackage{graphicx}
 \RequirePackage{scalerel}
@@ -159,37 +177,29 @@
 % Maketitle renewcommand -----------------------------------------
 
 \newcommand{\titletwo}[1]{\gdef\@titletwo{#1}}
+\newcommand{\version}[1]{\gdef\@version{#1}}
 
 \renewcommand{\maketitle}{
 \twocolumn[
     \begin{@twocolumnfalse}
     
     % Bar
-    \smash{\rlap{\textcolor[RGB]{\dep@redT,\dep@greenT,\dep@blueT}{\vrule width \textwidth height 20.000mm depth -17mm}}}
+    \smash{\rlap{\textcolor[RGB]{\dep@redT,\dep@greenT,\dep@blueT}{\vrule width \textwidth height 20.000mm depth -16mm}}}
     
     % Title
-%    \begin{multicols}{2}
-%    \begin{FlushLeft}
-%    {\LARGE \textbf{\@title} \\ \Large\textbf{\@titletwo}\columnbreak}
-%    \end{FlushLeft}
+    \begin{multicols}{2}
+    \begin{FlushLeft}
+    {\LARGE \textbf{\@title} \\ \Large\textbf{\@titletwo}\columnbreak}
+    \end{FlushLeft}
     
     % Date
-%    \begin{FlushRight}
-%    {\lARGE \mydate \par}
- %   \end{FlushRight}
-%
-%    \end{multicols}
-    
+    \begin{FlushRight}
+    {\LARGE \mydate\\\small version \@version\par}
+    \end{FlushRight}
 
-    %\begin{center}
+    \end{multicols}
 
-    \begin{tabular}{l r}
-      \LARGE \textbf{\@title}  & \LARGE \mydate  \\
-    \Large\textbf{\@titletwo} & 
-    \end{tabular}
-    %\end{center}
-    
-    
+    % Authors
     \begin{center}
     {\large
       \lineskip .5em%

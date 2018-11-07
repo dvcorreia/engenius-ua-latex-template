@@ -1,6 +1,6 @@
 # Engenius Latex Template
 
-<p align="center"><a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./src/engeniusLogo.png" alt="engenius-logo"></a>
+<p align="center"><a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./one-column-template/src/engeniusLogo.png" alt="engenius-logo"></a>
 <a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./src/latexlogo.png" alt="engenius-logo"></a>
 </p>
 

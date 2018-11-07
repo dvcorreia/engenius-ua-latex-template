@@ -1,0 +1,159 @@
+% Latex Document Class used exclusively by Engenius UA 
+% (c) 2018, Diogo Correia and João Santos, MIT Licensed
+% Repository: https://github.com/dvcorreia/engenius-ua-latex-template.git
+%
+
+% Put between [ ] in \documentclass bellow your department following these macros:
+% + ec - Electronics and Communications Department
+% + epower - Powertrain Electric Department
+% + business - Business Department
+% + cpower - Powertrain Combustion Department
+% + svd - Suspension and vehicle dynamics Department
+% + chassis - Chassis develpment Department
+
+\documentclass[]{engenius}
+
+% Fill the document parameters:
+% Remove \titletwo if you need only one title
+% You can remove authors by deleting their correspondent info in \author
+% You have 3 option for department identification starting as no identification, identification by department name (e.g \depofpower) or identification by department color (e.g \depofbusinesscolor).
+
+\title{Engenius Latex Template}
+\titletwo{How to use it!}
+
+\author{Author 1 \\ \email{emailauthor1@ua.pt}
+	\and Author 2 \\ \email{emailauthor2@ua.pt} \\ \depofepower
+    \and Author 3 \\ \email{emailauthor3@ua.pt} \\ \depofbusinesscolor
+    } 
+    
+% Update date for the release date as 
+\date{\today}
+
+% It's important to version your documents, to do so: #1.#2.#3 where:
+% - #1 represents a complete modification of the previous work;
+% - #2 a big change in the current work;
+% - #3 small changes and updates to the current work.
+% Version 1.0.0 should be the first complete release of your work
+\version{0.1.0}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+The \textbf{abstract} is supposed to be a brief resume where you write about what the report will be about and the objectives. If this document is an update to a older report from were you were not part of that must be referenced here and in the Revisions section in order to check the progress of the team through the years and give credit to the previous team members.
+
+\end{abstract}
+
+\section{How to write well}
+In this template we created some commands that provide to a non \LaTeX~ user an easy write without any knowledge about \TeX~or~\LaTeX technologies.
+
+\subsection{Document Information}
+Before start writing you should complete the preamble with your information. Don't forget to insert your department identification in \mintinline{latex}{\documentclass[your department]{engenius}} as described in the comments.
+
+\subsubsection{Authors}
+
+Fill the authors information and choose a common way of identifying your department. There are 3 options you can choose: not identifying at all, identifying as showed in Author2 (\mintinline{latex}{\depofepower})or with your department color and exemplified in Author3 (\mintinline{latex}{\depofbusinesscolor}). As authors we prefer the second option, but feel free to use whatever you like the most.
+
+\subsubsection{Versions}
+
+Versions are important since they can evaluate the progress of the work. A version is composed by 3 integers, \textit{version N1.N2.N3}. N1 increases when a complete modification of the previous work is implemented, N2 increases when are made big changes in the current work, N3 increases when small changes like updates are done or added.
+
+\subsection{Writing the document}
+
+An introduction is optional since the main objective is a compact study and discussion of the development process.
+Next will be showed good practices when writing with this template.
+
+\subsubsection{Equations}
+
+To use equations you can make them inline like this $x = y + z$ or you can do them like this:
+
+\begin{equation}\label{eq:timehtol}
+    \int_{0}^{tp_{HL}}dt = tp_{HL} = -C_L \int_{V_{dd}}^{V_{dd}/2}\frac{1}{I_{DSN}} dV_O
+\end{equation}
+
+And you can reference the equation like this \mintinline{Latex}{\ref{eq:timehtol}}, \textbf{e.g} \mintinline{Latex}{equation \ref{eq:timehtol}}, appearing like in the bold text \textbf{equation~\ref{eq:timehtol}}. It will automatically change if you other equations are inserted before, so this way you don't need to worry about equation numbering.
+
+\subsubsection{Lists}
+
+Making lists is very simple. Check the code bellow that makes the list showed in this section. Understand the code and change to your needs.
+
+\begin{codebox}{Code to make lists}
+    \begin{minted}{Latex}
+        \begin{itemize}
+            \item item 1
+            \item group 1
+            \begin{itemize}
+                \item item 2
+                \item item 3
+            \end{itemize}
+            \item item 4
+        \end{itemize}
+    \end{minted}
+\end{codebox}
+
+\begin{itemize}
+    \item item 1
+    \item group 1
+    \begin{itemize}
+        \item item 2
+        \item item 3
+    \end{itemize}
+    \item item 4
+\end{itemize}
+
+
+\subsubsection{Images}
+
+Images are placed like the example bellow. You can tune the width to make it fit your needs, it can take any units (cm, in, em ...). To reference an image you can follow the same approach as in equations: \mintinline{Latex}{\ref{img:engeniuslogo}}, image~\ref{img:engeniuslogo}.
+To change the image just replace the \textbf{url} in \textit{includegraphics}. Don't forget that you can change the label! Is this label that you need to reference when you want to do so.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=\textwidth/3]{src/engeniusLogo.png}
+        \caption{Engenius Image Example}
+        \label{img:engeniuslogo}
+    \end{center}
+\end{figure}
+
+\subsubsection{Code}
+
+Raw code can be inserted inline like this \mintinline{python}{print("Hello world!")}, or in a box like the one bellow. Check our code to see how to do it.
+
+\begin{codebox}{Example Code}
+    \begin{minted}{C}
+        #include <stdio.h>
+        int main()
+        {
+           // printf() displays the string inside quotation
+           printf("Hello, World!");
+           return 0;
+        }
+    \end{minted}
+\end{codebox}
+
+\subsubsection{References and Revision}
+
+References must be used when you use information from external fonts. There is no shame in referencing everything, it gives you credibility. Your bibliography must be in the file \mintinline{text}{./biblio.bib} structured like the examples already there. To cite something just use \mintinline{Latex}{\cite{name}}, that will show like this \cite{einstein}. The reference will then appear in the references section.
+
+The revision section is used to tell which report are you updating/revising in case you have one. This section exist in order to give credits to the people that worked before you, they must not be forgotten :) . You also need to put in your document all revisions that were in the document you are updating and don't forget to versioning accordingly.
+
+\section{Questions, Bugs and Suggestions}
+
+This template was created by Diogo Correia and João Santos.
+Original Repository \textcolor{blue}{\href{https://github.com/dvcorreia/engenius-ua-latex-template}{here}}.
+
+We spent a good amount of time creating this template and we are open for collaborators and suggestions :) .
+
+If you find any bugs please make us know so we can fix then.
+If you have any question or you need help just contact us.
+
+All of that can be done in github's issues section at the following link:  \textcolor{blue}{\href{https://github.com/dvcorreia/engenius-ua-latex-template/issues/new}{here}}.
+
+\bibliography{biblio}
+
+\revisions
+\revisionof{Engenius Latex Template: How to use it!}{Electronics/Communications}{Diogo Correia, João Santos}{0.0.1}{12/02/2018}
+
+\end{document}
