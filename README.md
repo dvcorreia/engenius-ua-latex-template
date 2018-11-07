@@ -22,7 +22,7 @@ This template was created thinking about non LaTeX users, providing easy writing
 ## Preview
 
 <p align="center">
-    Dowload <b>.pdf</b> Template Examples
+    Check <b>.pdf</b> Template Examples
 </p>
 
 <p align="center">
