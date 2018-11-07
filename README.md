@@ -1,33 +1,49 @@
 # Engenius Latex Template
 
-<p align="center"><a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./one-column-template/src/engeniusLogo.png" alt="engenius-logo"></a>
-<a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./src/latexlogo.png" alt="engenius-logo"></a>
+<p align="center"><a href="http://engeniusteam.web.ua.pt/" target="_blank"><img height="60" src="./documentation-assets/engeniusLogo.png" alt="engenius-logo"></a>
+<a href="https://www.latex-project.org/" target="_blank"><img height="60" src="./documentation-assets/latexlogo.png" alt="latex-logo"></a>
 </p>
 
 <p align="center">
+<b>one-column version:</b>
 <a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
 </p>
 
-A custom Latex Document Class used exclusively by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
-This template was created thinking about non LaTeX users, providing easy  writing for people without any knowledge about TeX or LaTeX.
+<p align="center">
+<b>two-column version:</b>
+<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0-beta/engenius-ua-latex-template.zip">Download Template</a>
+ ||
+<a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
+</p>
+
+A custom Latex Document Class used by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
+This template was created thinking about non LaTeX users, providing easy writing and functions for people without any knowledge about TeX or LaTeX.
 
 ## Preview
 
 <p align="center">
+    Dowload <b>.pdf</b> Template Examples
+</p>
 
-[Download example](tutorial.pdf)
+<p align="center">
+<a href="./documentation-assets/engenius-ua-latex-one-column-template.pdf">One Column Template</a>
+ ||
+<a href="./documentation-assets/engenius-ua-latex-two-column-template.pdf">Two Column Template</a>
+</p>
 
-<a href=# target="_blank"><img src="./src/headergit.png" alt="engenius-logo"></a>
+<a href=# target="_blank"><img src="./documentation-assets/headergit.png" alt="engenius-logo"></a>
 
 </p>
 
 ## How to use the template
 
+The most pratical way to learn how to use the template is by opening in your editor of preference the project template in this repo ou by creating a new project with the template in overleaf. In the template will be a step by step guide how to work with it.
+
 ### Abstract
 
-The __abstract__ is supposed to be a brief resume where you write about what the report will be about, the objectives and if is an update to a older report from you or other author (that must be referenced here and in the Revisions section). An introduction is optional since the main objective is a compact study and discussion of the development process.
+The __abstract__ is supposed to be a brief resume where you write about what the report will be about and the objectives. If this document is an update to a older report from were you were not part of that must be referenced here and in the Revisions section in order to check the progress of the team through the years and give credit to the previous team members.
 
 ### Document Information
 
@@ -58,6 +74,8 @@ Fill the __authors__ information and choose a common way of identifying your dep
 + __depofsvdcolor__ - Suspension and vehicle dynamics Department
 + __depofchassiscolor__ - Chassis develpment Department
 
+Out preference is identifying with the name of your department, the second option.
+
 __Versions__ are important since they can evaluate the progress of the work. A version is composed by 3 integers, `version N1.N2.N3`. `N1` increases when a complete modification of the previous work is implemented, `N2` increases when are made big changes in the current work, `N3` increases when small changes like updates are done or added.
 
 ### Writing sugestions
@@ -79,7 +97,7 @@ And you can reference it like this `equation~\ref{eq:timehtol}`. It will automat
 Images are placed like the example bellow. You can tune the width to make it fit your needs, it can take any units (cm, in, em ...). To reference an image you can follow the same aproach as in equations: `image~\ref{img:engeniuslogo}`.
 
 ```latex
-\begin{figure}[!ht]
+\begin{figure}[H]
     \begin{center}
         \includegraphics[width=\textwidth/3]{src/engeniusLogo.png}
         \caption{Engenius Image Example}
@@ -123,9 +141,9 @@ If you find any bugs please let us know so we can fix then.
 If you have any question or need help you can also contact us.
 Check if your question was already been answered [here](https://github.com/dvcorreia/engenius-ua-latex-template/labels/question).
 
-All of that can be done here in github [here](https://github.com/dvcorreia/engenius-ua-latex-template/issues/new), by selecting the correct label (bugs for bugs, enhancement for suggestions and  questions with the question label).
+All of that can be done here in github's issues section, [here](https://github.com/dvcorreia/engenius-ua-latex-template/issues/new).
 
-Thanks for the attention and continuation of a good work :car: .
+Thanks for using our template :car: .
 
 ## Contribution
 
