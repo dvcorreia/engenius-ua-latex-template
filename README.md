@@ -146,4 +146,7 @@ Thanks for using our template :car: .
 ## Contribution
 
 Feel free to contribute and improve this template!
+
+This template was inspired by the latex [template](http://code.ua.pt/projects/latex-ua) from Aveiro's University, following the same design rules.
+
 Thank you to all the people who already [contributed](https://github.com/dvcorreia/engenius-ua-latex-template/graphs/contributors)!
