@@ -2,22 +2,22 @@
 <a href="https://www.latex-project.org/" target="_blank"><img height="60" src="./documentation-assets/latexlogo.png" alt="latex-logo"></a>
 </p>
 
+A custom Latex Document Class used by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
+This template was created thinking about non LaTeX users, providing easy writing and functions for people without any knowledge about TeX or LaTeX.
+
 <p align="center">
 <b>one-column:</b>
-<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0/engenius-ua-latex-template-one-column.zip">Download Template</a>
+<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0/engenius-ua-latex-template-one-column.zip">Download</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
 </p>
 
 <p align="center">
 <b>two-column:</b>
-<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0/engenius-ua-latex-template-two-column.zip">Download Template</a>
+<a href="https://github.com/dvcorreia/engenius-ua-latex-template/releases/download/v0.1.0/engenius-ua-latex-template-two-column.zip">Download</a>
  ||
 <a href="https://www.overleaf.com/latex/templates/engenius-latex-template/nzcqzfvmctkz#">Open with Overleaf</a>
 </p>
-
-A custom Latex Document Class used by _Engenius_ at Aveiro's University. Was developed by [Diogo Correia](https://github.com/dvcorreia) and [João Santos](https://github.com/joaompsantos).
-This template was created thinking about non LaTeX users, providing easy writing and functions for people without any knowledge about TeX or LaTeX.
 
 ## Preview
 
